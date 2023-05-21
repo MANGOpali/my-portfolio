@@ -23,6 +23,7 @@ html,
 body {
   font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -164,6 +165,10 @@ section {
   padding: 55px 0;
 }
 
+.about {
+  width: 100%;
+  margin-top: 50px;
+}
 .about .title {
   font-size: var(--font-one);
 }
@@ -174,7 +179,6 @@ section {
   align-items: center;
   justify-content: space-around;
 }
-
 .about .about-content .left {
   width: 40%;
 }
@@ -305,6 +309,26 @@ section {
   margin: 10px 0 15px 0;
 }
 
+.prog-skills {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+}
+.prog-skills .prog-container-left {
+  position: relative;
+  left: 90px;
+}
+.prog-skills .prog-container-right {
+  position: relative;
+  left: 250px;
+}
+.prog-skills .prog-skill {
+  padding: 35px 0 35px;
+}
+.prog-skills .prog-skill .text {
+  font-size: 17px;
+  font-weight: 800;
+}
 /* skills  */
 
 /* contact styling here */

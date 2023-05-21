@@ -29,6 +29,9 @@
   font-family: "varela round";
   font-size: 20px;
   font-weight: 900;
+  position: relative;
+  top: -40px;
+  left: 90px;
 }
 .ldBar[data-preset="circle"] path {
   stroke: var(--th-color); /* Change to your desired color */
@@ -41,6 +44,6 @@
 }
 .ldBar path.baseline {
   stroke-width: 9;
-  stroke: #f1f2f3;
+  stroke: #e6e6e6;
   stroke-linecap: round;
 }
