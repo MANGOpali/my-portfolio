@@ -580,6 +580,17 @@ footer span a:hover {
   .skills .skills-content .card {
     width: 50%;
   }
+  .prog-skills {
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+  }
+  .prog-skills .prog-container-left {
+    left: 176px;
+  }
+  .prog-skills .prog-container-right {
+    left: 176px;
+  }
   /* //services  */
   .services .serv-content {
     grid-template-columns: repeat(1, 1fr);
