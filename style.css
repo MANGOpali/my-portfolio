@@ -41,6 +41,7 @@ body {
 .nav {
   height: 70px;
   width: 100%;
+  padding: 0 80px;
   background-color: white;
   position: relative;
   display: flex;
@@ -279,55 +280,17 @@ section {
 }
 /* skills  */
 .skills .skills-content {
+  font-size: 60px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 1fr;
+  place-items: center;
 }
-.skills .skills-content .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 250px;
-  background: white;
-  text-align: center;
-  border-radius: 6px;
-  padding: 30px 35px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
-  transition: color 0.3s ease;
+.skills img {
+  width: 60px;
 }
-.skills .skills-content .card .box {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.skills .skills-content .card .text {
-  font-size: 20px;
-  font-weight: 800;
-  margin: 10px 0 15px 0;
-}
-
-.prog-skills {
-  padding-top: 30px;
-  width: 100%;
-  display: flex;
-}
-.prog-skills .prog-container-left {
-  position: relative;
-  left: 90px;
-}
-.prog-skills .prog-container-right {
-  position: relative;
-  left: 250px;
-}
-.prog-skills .prog-skill {
-  padding: 35px 0 35px;
-}
-.prog-skills .prog-skill .text {
-  font-size: 17px;
-  font-weight: 800;
+.skills .skills-content .item {
+  margin-bottom: 30px;
 }
 /* skills  */
 
@@ -488,6 +451,24 @@ footer span a:hover {
     margin-right: 30px;
   }
 }
+@media (max-width: 500px) {
+  .nav {
+    padding: 0px 0px;
+  }
+  .home .home-content .text-2 {
+    font-size: 45px !important;
+  }
+
+  .max-width {
+    padding: 0 55px !important;
+  }
+  .services .serv-content .card {
+    width: 90%;
+  }
+  .contact .contact-content {
+    padding: 10px !important;
+  }
+}
 @media (max-width: 1000px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -577,20 +558,7 @@ footer span a:hover {
     justify-items: center;
     align-items: center;
   }
-  .skills .skills-content .card {
-    width: 50%;
-  }
-  .prog-skills {
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: center;
-  }
-  .prog-skills .prog-container-left {
-    left: 176px;
-  }
-  .prog-skills .prog-container-right {
-    left: 176px;
-  }
+
   /* //services  */
   .services .serv-content {
     grid-template-columns: repeat(1, 1fr);
@@ -598,8 +566,9 @@ footer span a:hover {
     align-items: center;
     grid-gap: 10px;
   }
+
   .services .serv-content .card {
-    width: 50%;
+    width: 90%;
   }
   /* contact  */
   .contact .contact-content {
